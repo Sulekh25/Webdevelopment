@@ -22,15 +22,16 @@ main {
 
   .table {
     display: grid;
+    column-gap: 2px;
+    row-gap: 2px;
   }
 
   .table {
     margin-bottom: 2rem;
-    grid-template-columns: repeat(18, 5rem);
+    grid-template-columns: repeat(18, 6rem);
     grid-template-rows: 6rem 6rem 6rem 6rem 6rem 6rem 6rem 2rem 6rem 6rem;
   }
 }
-
 .element {
   position: relative;
   background-color: rgba(black, .25);
@@ -41,6 +42,7 @@ main {
   transition-duration: .2s;
   transition-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
+
 
 .element-number {
   font-style: italic;
@@ -121,6 +123,7 @@ main {
 .element-actinide {
   background-color: #65009c;
 }
+
 
 #key {
   grid-area: 1/7/3/10;
