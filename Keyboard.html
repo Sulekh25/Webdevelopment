@@ -1,163 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2d Keyboard</title>
-</head>
+  <link rel="stylesheet" type="text/css" href="Keyboard.css">
+ </head>
+
 <body>
-  <div id="esc">ESC</div>
-  <div id="f1">F1</div>
-  <div id="f2">F2</div>
-  <div id="f3">F3</div>
-  <div id="f4">F4</div>
-  <div id="f5">F5</div>
-  <div id="f6">F6</div>
-  <div id="f7">F7</div>
-  <div id="f8">F8</div>
-  <div id="f9">F9</div>
-  <div id="f10">F10</div>
-  <div id="f11">F11</div>
-  <div id="f12">F12</div>
-  <div id="ps">PRINT SCREEN</div>
-  <div id="sl">SCROLL LOCK</div>
-  <div id="pause">PAUSE/BREAK</div>
-  <section class="row1" id="r1">
-    <div>~</div>
-    <div>`</div>
-  </section>
-  <section class="row2">
-    <div>!</div>
-    <div>1</div>  
-  </section>
-  <section class="row3">
-    <div>@</div>
-    <div>2</div>
-  </section>
-  <section class="row4">
-    <div>#</div>
-    <div>3</div>
-  </section>
-  <section class="row5">
-    <div>$</div>
-    <div>4</div>
-  </section>
-  <section class="row6">
-    <div>%</div>
-    <div>5</div>
-  </section>
-  <section class="row7">
-    <div>^</div>
-    <div>6</div>
-  </section>
-  <section class="row8">
-    <div>&</div>
-    <div>7</div>
-  </section>
-  <section class="row9">
-    <div>*</div>
-    <div>8</div>
-  </section>
-  <section class="row10">
-    <div>(</div>
-    <div>9</div>
-  </section>
-  <section class="row11">
-    <div>)</div>
-    <div>0</div>
-  </section>
-  <section class="row12">
-    <div>_</div>
-    <div>-</div>
-  </section>
-  <section class="row13">
-    <div>+</div>
-    <div>=</div>
-  </section>
-  <div>Backspace</div>
-  <div>Insert</div>
-  <div>Home</div>
-  <div>Page Up</div>
-  <div>Num Lock</div>
-  <div>/</div>
-  <div>*</div>
-  <div>-</div>
-  <div>/</div>
-  <div>Tab</div>
-  <div>Q</div>
-  <div>W</div>
-  <div>E</div>
-  <div>R</div>
-  <div>T</div>
-  <div>Y</div>
-  <div>U</div>
-  <div>I</div>
-  <div>O</div>
-  <div>P</div>
-  <section class="cr1">
-    <div>{</div>
-      <div>[</div>
-  </section>
-  <section class="cr2">
-    <div>}</div>
-    <div>]</div>
-  </section>
-  <section class="cr3">
-    <div>|</div>
-    <div>\</div>
-  </section>
-  <div>DELETE</div>
-  <div>END</div>
-  <div>PAGE DOWN</div>
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-  <div>+</div>
-  <div>Caps Lock</div>
-  <div>A</div>
-  <div>S</div>
-  <div>D</div>
-  <div>F</div>
-  <div>G</div>
-  <div>H</div>
-  <div>J</div>
-  <div>K</div>
-  <div>L</div>
-  <section class="cr12">
-    <div>:</div>
-    <div>"</div>
-  </section>    
-  <section class="cr4">
-    <div>"</div>
-    <div>'</div>
-  </section>
-  <div>ENTER</div>
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>
-  <div>Shift</div>
-  <div>Z</div>
-  <div>X</div>
-  <div>C</div>
-  <div>V</div>
-  <div>B</div>
-  <div>N</div>
-  <div>M</div>
-  <section class="cr5">
-    <div><</div>
-    <div>,</div>
-  </section>
-  <section class="cr6">
-    <div>></div>
-    <div>.</div>
-  </section>
-  <div>Shift</div>
-  <div>↑</div>
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>Enter</div>
-  <div>Ctrl</div>
-  <div></div>
+  <div class="keyboard">
+    <div class="key special" id="esc"><button class="buttonkey" >Esc</button></div>
+    <div class="key special" id="f1"><button  class="buttonkey">F1</button></div>
+    <div class="key special" id="f2"><button  class="buttonkey">F2</button></div>
+    <div class="key special" id="f3"><button  class="buttonkey">F3</button></div>
+    <div class="key special" id="f4"><button  class="buttonkey">F4</button></div>
+    <div class="key special" id="f5"><button  class="buttonkey">F5</button></div>
+    <div class="key special" id="f6"><button  class="buttonkey">F6</button></div>
+    <div class="key special" id="f7"><button  class="buttonkey">F7</button></div>
+    <div class="key special" id="f8"><button  class="buttonkey">F8</button></div>
+    <div class="key special" id="f9"><button  class="buttonkey">F9</button></div>
+    <div class="key special" id="f10"><button class="buttonkey">F10</button></div>
+    <div class="key special" id="f11"><button class="buttonkey">F11</button></div>
+    <div class="key special" id="f12"><button class="buttonkey">F12</button></div>
+    <div class="key special" id="delete"><button  class="buttonkey">Delete</button></div>
+    <div class="key special" id="home"><button  class="buttonkey">Home</button></div>
+    <div class="key special" id="end"><button class="buttonkey">End</button></div>
+    <div class="key special" id="pgup"><button  class="buttonkey">PgUp</button></div>
+    <div class="key special" id="pgdn"><button  class="buttonkey">PgDn</button></div>
+    <div class="key" id="1"><button class="buttonkey">1</button></div>
+    <div class="key" id="2"><button class="buttonkey">2</button></div>
+    <div class="key" id="3"><button class="buttonkey">3</button></div>
+    <div class="key" id="4"><button class="buttonkey">4</button></div>
+    <div class="key" id="5"><button class="buttonkey">5</button></div>
+    <div class="key" id="6"><button class="buttonkey">6</button></div>
+    <div class="key" id="7"><button class="buttonkey">7</button></div>
+    <div class="key" id="8"><button class="buttonkey">8</button></div>
+    <div class="key" id="9"><button class="buttonkey">9</button></div>
+    <div class="key" id="0"><button class="buttonkey">0</button></div>
+    <div class="key" id="-"><button class="buttonkey">-</button></div>
+    <div class="key" id="="><button class="buttonkey">=</button></div>
+    <div class="key" id="bkspc"><button class="buttonkey">BKSPC</button></div>
+    <div class="key" id="numlock"><button class="buttonkey">Num Lock</button></div>
+    <div class="key" id="/"><button class="buttonkey">/</button></div>
+    <div class="key" id="*"><button class="buttonkey">*</button></div>
+    <div class="key" id="--"><button  class="buttonkey">-</button></div>
+    <div class="key" id="tab"><button class="buttonkey">TAB</button></div>
+    <div class="key" id="q"><button class="buttonkey">Q</button></div>
+    <div class="key"><button  class="buttonkey">W</button></div>
+    <div class="key"><button  class="buttonkey">E</button></div>
+    <div class="key"><button  class="buttonkey">R</button></div>
+    <div class="key"><button  class="buttonkey">T</button></div>
+    <div class="key"><button  class="buttonkey">Y</button></div>
+    <div class="key"><button  class="buttonkey">U</button></div>
+    <div class="key"><button  class="buttonkey">I</button></div>
+    <div class="key"><button  class="buttonkey">O</button></div>
+    <div class="key"><button  class="buttonkey">P</button></div>
+    <div class="key"><button  class="buttonkey">[</button></div>
+    <div class="key"><button  class="buttonkey">]</button></div>
+    <div class="key"><button  class="buttonkey">\</button></div>
+    <div class="key"><button  class="buttonkey">7</button></div>
+    <div class="key"><button  class="buttonkey">8</button></div>
+    <div class="key"><button  class="buttonkey">9</button></div>
+    <div class="key"><button  class="buttonkey">+</button></div>
+    <div class="key"><button  class="buttonkey">Shift</button></div>
+    <div class="key"><button  class="buttonkey">A</button></div>
+    <div class="key"><button  class="buttonkey">S</button></div>
+    <div class="key"><button  class="buttonkey">D</button></div>
+    <div class="key"><button  class="buttonkey">F</button></div>
+    <div class="key"><button  class="buttonkey">G</button></div>
+    <div class="key"><button  class="buttonkey">H</button></div>
+    <div class="key"><button  class="buttonkey">J</button></div>
+    <div class="key"><button  class="buttonkey">K</button></div>
+    <div class="key"><button  class="buttonkey">L</button></div>
+    <div class="key"><button  class="buttonkey">;</button></div>
+    <div class="key"><button  class="buttonkey">'</button></div>
+    <div class="key"><button  class="buttonkey">Enter</button></div>
+    <div class="key"><button  class="buttonkey">4</button></div>
+    <div class="key"><button  class="buttonkey">5</button></div>
+    <div class="key"><button  class="buttonkey">6</button></div>
+    <div class="key"><button  class="buttonkey">Shift</button></div>
+    <div class="key"><button  class="buttonkey">Z</button></div>
+    <div class="key"><button  class="buttonkey">X</button></div>
+    <div class="key"><button  class="buttonkey">C</button></div>
+    <div class="key"><button  class="buttonkey">V</button></div>
+    <div class="key"><button  class="buttonkey">B</button></div>
+    <div class="key"><button  class="buttonkey">N</button></div>
+    <div class="key"><button  class="buttonkey">M</button></div> 
+    <div class="key"><button  class="buttonkey"><</button></div>
+    <div class="key"><button  class="buttonkey">></button></div>
+    <div class="key"><button  class="buttonkey">?</button></div>
+    <div class="key"><button  class="buttonkey">Shift</button></div>
+    <div class="key"><button  class="buttonkey">Ctrl</button></div>
+    <div class="key"><button  class="buttonkey">Fn</button></div>
+    <div class="key"><button  class="buttonkey">Alt</button></div>
+    <div class="key"><button  class="buttonkey">Space</button></div>
+    <div class="key"><button  class="buttonkey">Alt</button></div>
+    <div class="key"><button  class="buttonkey">Ctrl</button></div>
+    <div class="key"><button  class="buttonkey">↑</button></div>
+    <div class="key"><button  class="buttonkey">←</button></div>
+    <div class="key"><button  class="buttonkey">↓</button></div>
+    <div class="key"><button  class="buttonkey">→</button></div>
+    <div class="key"><button  class="buttonkey">0</button></div>
+    <div class="key"><button  class="buttonkey">.</button></div>
 </body>
 </html>
