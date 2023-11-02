@@ -33,13 +33,9 @@ main {
   }
 }
 .element {
-  background-color: rgba(black, .25);
   padding: 2px;
   margin: 2px;
-  box-shadow: 0 .125rem .25rem black;
-  transition-property: box-shadow, transform;
-  transition-duration: .2s;
-  transition-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  box-shadow: 2px 2px 2px 2px black;
 }
 
 
