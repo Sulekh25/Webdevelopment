@@ -9,8 +9,8 @@ body {
 
 .keyboard {
     display: grid;
-    grid-template-columns: repeat(11, 6rem);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(18, 65px);
+    grid-template-rows: repeat(6, 40px);
     gap: 1px;
     background-color: #444;
     padding: 10px;
@@ -21,56 +21,144 @@ body {
     background-color: #333;
     display: flex;
     justify-content: center;
+    padding: 5px;
 }
-.buttonkey{
-    padding: 1px px;
-}
-#esc{
+
+#esc {
     grid-area: 1/1/1/1;
 }
-#f1{
+
+#f1 {
     grid-area: 1/2/1/2;
 }
-#f2{
+
+#f2 {
     grid-area: 1/3/1/3;
 }
-#f3{
+
+#f3 {
     grid-area: 1/4/1/4;
 }
-#f4{
-    grid-area: 1/5/1/5;
-    }
-    #f5{
-        grid-area: 1/6/1/6;
-        }
-        #f6{
-            grid-area: 1/7/1/7;
-            }
-            #f7{
-                grid-area: 1/8/1/8;
-                }
-                #f8{
-                    grid-area: 1/9/1/9;
-                }
-                #f9{
-                    grid-area: 1/10/1/10;
-                }
-                #f10{
-                    grid-area: 1/11/1/11;
-                }
-                #f11{
-                    grid-area: 1/12/1/12;
-                }
-                #f12{
-                    grid-area: 1/13/1/13;
-                }
-                #delete{
-                    grid-area: 1/14/1/14;
-                }
-                #home{
-                    grid-area: 1/15/1/15;
-                }
-                #end{
-                    grid-area: 1/16/1/16;
-                }
 
+#f4 {
+    grid-area: 1/5/1/5;
+}
+
+#f5 {
+    grid-area: 1/6/1/6;
+}
+
+#f6 {
+    grid-area: 1/7/1/7;
+}
+
+#f7 {
+    grid-area: 1/8/1/8;
+}
+
+#f8 {
+    grid-area: 1/9/1/9;
+}
+
+#f9 {
+    grid-area: 1/10/1/10;
+}
+
+#f10 {
+    grid-area: 1/11/1/11;
+}
+
+#f11 {
+    grid-area: 1/12/1/12;
+}
+
+#f12 {
+    grid-area: 1/13/1/13;
+}
+
+#delete {
+    grid-area: 1/14/1/14;
+}
+
+#home {
+    grid-area: 1/15/1/15;
+}
+
+#end {
+    grid-area: 1/16/1/16;
+}
+
+#pgup {
+    grid-area: 1/17/1/17;
+}
+
+#pgdn {
+    grid-area: 1/18/1/18;
+}
+
+#sp {
+    grid-area: 2/1/2/1;
+}
+
+#r1 {
+    grid-area: 2/2/2/2;
+}
+
+#r2 {
+    grid-area: 2/3/2/3;
+}
+
+#r3 {
+    grid-area: 2/4/2/4;
+}
+
+#r4 {
+    grid-area: 2/5/2/5;
+}
+
+#r5 {
+    grid-area: 2/6/2/6;
+}
+
+#r6 {
+    grid-area: 2/7/2/7;
+}
+
+#r7 {
+    grid-area: 2/8/2/8;
+}
+
+#r8 {
+    grid-area: 2/9/2/9;
+}
+#r9 {
+    grid-area: 2/10/2/10;
+}
+#r0{
+    grid-area: 2/11/2/11;
+}
+#r-{
+    grid-area: 2/12/2/12;
+}
+#sa {
+    grid-area: 2/13/2/13;
+    }
+    #bkspc{
+        grid-area: 2/14/2/14;
+    }
+    #numlock{
+        grid-area: 2/15/2/15;
+    }
+    #ss{
+        grid-area: 2/16/2/16;
+    }
+    #sr{
+        grid-area: 2/17/2/17;
+    }
+    #--{
+        grid-area: 2/18/2/18;
+    }
+    #tab{
+        grid-area: 3/1/3/2;
+    }
+    
