@@ -75,26 +75,16 @@ body {
 #f12 {
     grid-area: 1/13/1/13;
 }
-
-#delete {
-    grid-area: 1/14/1/14;
+#prtscr{
+    grid-area: 1/14/1//14;
 }
-
-#home {
+#scrLk{
     grid-area: 1/15/1/15;
 }
-
-#end {
+#pauseBreak{
     grid-area: 1/16/1/16;
 }
 
-#pgup {
-    grid-area: 1/17/1/17;
-}
-
-#pgdn {
-    grid-area: 1/18/1/18;
-}
 
 #sp {
     grid-area: 2/1/2/1;
@@ -146,6 +136,16 @@ body {
     #bkspc{
         grid-area: 2/14/2/14;
     }
+    #insert{
+        grid-area: 2/15/2/15;
+    }
+    #home{
+        grid-area: 2/16/2/16;
+    }
+    #pgUp{
+        grid-area: 2/17/2/17;
+    }
+    
     #numlock{
         grid-area: 2/15/2/15;
     }

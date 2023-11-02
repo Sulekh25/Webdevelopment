@@ -13,14 +13,12 @@ h1 {
   text-align: center;
 }
 section{
-  padding:20px;
+  padding:5px;
 }
 main {
   background: linear-gradient(to bottom right, white, darken(white, 5%));
-  margin: 2rem auto;
+  margin: 10px;
   width: 90%;
-  max-width: auto;
-  padding: 1rem;
 
   .table {
     display: grid;
@@ -30,14 +28,13 @@ main {
 
   .table {
     margin-bottom: 2rem;
-    grid-template-columns: repeat(18, 6rem);
-    grid-template-rows: 6rem 6rem 6rem 6rem 6rem 6rem 6rem 2rem 6rem 6rem;
+    grid-template-columns: repeat(18, 85px);
+    grid-template-rows: repeat(9, 85px);
   }
 }
 .element {
-  position: relative;
   background-color: rgba(black, .25);
-  padding: .25rem;
+  padding: 2px;
   margin: 2px;
   box-shadow: 0 .125rem .25rem black;
   transition-property: box-shadow, transform;
@@ -67,6 +64,7 @@ main {
 .element-weight{
   text-align: center;
 }
+
 
 &#key {
   .element-number {
