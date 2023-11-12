@@ -5,102 +5,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2d Keyboard</title>
-  <link rel="stylesheet" type="text/css" href="Keyboard.css">
+  <link rel="stylesheet" type="text/css" href="Keyboard.css" />
 </head>
 
 <body>
   <div class="keyboard">
-    <div class="keyboard1" id="row1">
-      <div class="key" id="esc">Esc</div>
-      <div class="row 1" id="row1a">
-        <div class="key" id="f1">F1</div>
-        <div class="key" id="f2">F2</div>
-        <div class="key" id="f3">F3</div>
-        <div class="key" id="f4">F4</div>
+
+    <section class="key-row">
+      <div class="key one">~</div>
+      <div class="key one">1</div>
+      <div class="key one">2</div>
+      <div class="key one">3</div>
+      <div class="key one">4</div>
+      <div class="key one">5</div>
+      <div class="key one">6</div>
+      <div class="key one">7</div>
+      <div class="key one">8</div>
+      <div class="key one">9</div>
+      <div class="key one">0</div>
+      <div class="key one">-</div>
+      <div class="key one">=</div>
+      <div class="key two">backspace</div>
+    </section>
+
+    <section class="key-row">
+      <div class="key one-one-half l">tab</div>
+      <div class="key one">q</div>
+      <div class="key one">w</div>
+      <div class="key one">e</div>
+      <div class="key one">r</div>
+      <div class="key one">t</div>
+      <div class="key one">y</div>
+      <div class="key one">u</div>
+      <div class="key one">i</div>
+      <div class="key one">o</div>
+      <div class="key one">p</div>
+      <div class="key one">[</div>
+      <div class="key one">]</div>
+      <div class="key one">\</div>
+    </section>
+
+    <section class="key-row">
+      <div class="key one-one-half l">search</div>
+      <div class="key one">a</div>
+      <div class="key one">s</div>
+      <div class="key one">d</div>
+      <div class="key one">f</div>
+      <div class="key one">g</div>
+      <div class="key one">h</div>
+      <div class="key one">j</div>
+      <div class="key one">k</div>
+      <div class="key one">l</div>
+      <div class="key one">;</div>
+      <div class="key one">'</div>
+      <div class="key two r">enter</div>
+    </section>
+
+    <section class="key-row">
+      <div class="key two-two-half l">shift</div>
+      <div class="key one">z</div>
+      <div class="key one">x</div>
+      <div class="key one">c</div>
+      <div class="key one">v</div>
+      <div class="key one">b</div>
+      <div class="key one">n</div>
+      <div class="key one">m</div>
+      <div class="key one">&lt;</div>
+      <div class="key one">></div>
+      <div class="key one">/</div>
+      <div class="key two-two-half r">shift</div>
+    </section>
+
+    <section class="key-row">
+      <div class="key two l">ctrl</div>
+      <div class="key two l">alt</div>
+      <div class="key five"><!-- Spacebar --></div>
+      <div class="key one-one-half">alt</div>
+      <div class="key one">ctrl</div>
+      <div class="arrowkey-container two-two-half">
+
       </div>
-      <div class="row1 a" id="row1b">
-        <div class="key" id="f5">F5</div>
-        <div class="key" id="f6">F6</div>
-        <div class="key" id="f7">F7</div>
-        <div class="key" id="f8">F8</div>
-      </div>
-      <div class="row1 b" id="row1c">
-        <div class="key" id="f9">F9</div>
-        <div class="key" id="f10">F10</div>
-        <div class="key" id="f11">F11</div>
-        <div class="key" id="f12">F12</div>
-      </div>
-    </div>
-    <div class="row1 c" id="row1d">
-      <div class="key" id="prtscr">Prt Scr</div>
-      <div class="key" id="scrLk">Scr Lk</div>
-      <div class="key" id="pauseBreak">Pause Break</div>
-    </div>
-    <div class="keyboards">
-      <div class="key" id="sp1">`</div>
-      <div class="key" id="r1">1</div>
-      <div class="key" id="r2">2</div>
-      <div class="key" id="r3">3</div>
-      <div class="key" id="r4">4</div>
-      <div class="key" id="r5">5</div>
-      <div class="key" id="r6">6</div>
-      <div class="key" id="r7">7</div>
-      <div class="key" id="r8">8</div>
-      <div class="key" id="r9">9</div>
-      <div class="key" id="r0">0</div>
-      <div class="key" id="r-">-</div>
-      <div class="key" id="sa">=</div>
-      <div class="key" id="bkspc">BKSPC</div>
-      <div class="key" id="tab">TAB</div>
-      <div class="key" id="q">Q</div>
-      <div class="key" id="w">W</div>
-      <div class="key" id="e">E</div>
-      <div class="key" id="r">R</div>
-      <div class="key" id="t">T</div>
-      <div class="key" id="y">Y</div>
-      <div class="key" id="u">U</div>
-      <div class="key" id="i">I</div>
-      <div class="key" id="o">O</div>
-      <div class="key" id="p">P</div>
-      <div class="key" id="s1">[</div>
-      <div class="key" id="s2">]</div>
-      <div class="key" id="s3">\</div>
-      <div class="key" id="capslk">Caps Lock</div>
-      <div class="key" id="a">A</div>
-      <div class="key" id="s">S</div>
-      <div class="key" id="d">D</div>
-      <div class="key" id="f">F</div>
-      <div class="key" id="g">G</div>
-      <div class="key" id="h">H</div>
-      <div class="key" id="j">J</div>
-      <div class="key" id="k">K</div>
-      <div class="key" id="l">L</div>
-      <div class="key" id="m1">;</div>
-      <div class="key" id="m2">'</div>
-      <div class="key" id="enter">Enter</div>
-      <div class="key" id="shift1">Shift</div>
-      <div class="key" id="z">Z</div>
-      <div class="key" id="x">X</div>
-      <div class="key" id="c">C</div>
-      <div class="key" id="v">V</div>
-      <div class="key" id="b">B</div>
-      <div class="key" id="n">N</div>
-      <div class="key" id="m">M</div>
-      <div class="key" id="sp"></div>
-          <div class="key" id="sq">></div>
-          <div class="key" id="sr">?</div>
-          <div class="key" id="shift2">Shift</div>
-          <div class="key" id="ctrl1">Ctrl</div>
-          <div class="key" id="windows"><img alt="windows key"
-              src="https://favpng.com/png_view/symbol-windows-key-symbol-operating-systems-png/VCeSFfTb"></div>
-          <div class="key" id="alt1">Alt</div>
-          <div class="key" id="space">Space</div>
-          <div class="key" id="alt2">Alt</div>
-          <div class="key" id="windows1"><img alt="windows key"
-              src="https://favpng.com/png_view/symbol-windows-key-symbol-operating-systems-png/VCeSFfTb"></div>
-          <div class="key" id="ctrl2">Ctrl</div>
-      </div>
-    </div>
+    </section>
+
+  </div>
+
+  </div>
 </body>
 
 </html>
