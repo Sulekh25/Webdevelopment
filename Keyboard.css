@@ -7,79 +7,386 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.keyboard {
-    display: grid;
-    gap: 1px;
-    background-color: #444;
-    padding: 10px;
-    border-radius: 5px;
-}
-
 .key {
     background-color: #333;
     display: flex;
     justify-content: center;
     padding: 5px;
 }
-#esc{
-    grid-area: 1/1/1/1;
-}
-.row1{
-    grid-area:1/2/1/2;
-}
-.row1 a{
-    grid-area:1/3/1/3;
-}
-.row1 b{
-    grid-area:1/4/1/4;
-}
-.row1 c{
-    grid-area:1/5/1/5;
-}
-.keyboards{
-    grid-area:2/1/2/1;
-    #sp{
+
+.keyboard {
+    display: grid;
+    gap: 1px;
+    background-color: #444;
+    padding: 1px;
+    border-radius: 5px;
+    grid-template-columns: repeat(3,450px);
+    grid-template-rows: auto;
+
+    #row1 {
         grid-area: 1/1/1/1;
-    }
-    #r1{
-        grid-area: 1/2/1/2;
-    }
-    #r2{
-        grid-area: 1/3/1/3;
-    }
-    #r3{
-        grid-area: 1/4/1/4;
-    }
-    #r4{
-        grid-area: 1/5/1/5;
+        display: grid;
+        gap: 1px;
+        background-color: #444;
+        padding: 10px;
+        border-radius: 5px;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+
+        #esc {
+            grid-area: 1/1/1/1;
         }
-        #r5{
+
+        #row1a {
+            grid-area: 1/2/1/2;
+            display: grid;
+            gap: 1px;
+            background-color: #444;
+            padding: 10px;
+            border-radius: 5px;
+            grid-template-columns: repeat(4,50px);
+            grid-template-rows: repeat(1,auto);
+
+            #f1 {
+                grid-area: 1/1/1/1;
+            }
+
+            #f2 {
+                grid-area: 1/2/1/2;
+            }
+
+            #f3 {
+                grid-area: 1/3/1/3;
+            }
+
+            #f4 {
+                grid-area: 1/4/1/4;
+            }
+        }
+
+        #row1b {
+            grid-area: 1/3/1/3;
+            display: grid;
+            gap: 1px;
+            background-color: #444;
+            padding: 10px;
+            border-radius: 5px;
+            grid-template-columns: repeat(4,50px);
+            grid-template-rows: repeat(1,50px);
+
+            #f5 {
+                grid-area: 1/1/1/1;
+            }
+
+            #f6 {
+                grid-area: 1/2/1/2;
+            }
+
+            #f7 {
+                grid-area: 1/3/1/3;
+            }
+
+            #f8 {
+                grid-area: 1/4/1/4;
+            }
+        }
+
+        #row1c {
+            grid-area: 1/4/1/4;
+            display: grid;
+            gap: 1px;
+            background-color: #444;
+            padding: 10px;
+            border-radius: 5px;
+            grid-template-columns: repeat(4,50px);
+            grid-template-rows: repeat(1,50px);
+
+            #f9 {
+                grid-area: 1/1/1/1;
+            }
+
+            #f10 {
+                grid-area: 1/2/1/2;
+            }
+
+            #f11 {
+                grid-area: 1/3/1/3;
+            }
+
+            #f12 {
+                grid-area: 1/4/1/4;
+            }
+        }
+
+        #row1d {
+            grid-area: 1/2/1/2;
+            display: grid;
+            gap: 1px;
+            background-color: #444;
+            padding: 10px;
+            border-radius: 5px;
+            grid-template-columns: repeat(3,50px);
+            grid-template-rows: (1,50px);
+
+            #prtscr {
+                grid-area: 1/1/1/1;
+            }
+
+            #scrLk {
+                grid-area: 1/2/1/2;
+            }
+
+            #pauseBreak {
+                grid-area: 1/3/1/3;
+            }
+        }
+    }
+
+    .keyboards {
+        grid-area: 2/1/2/1;
+        display: grid;
+        gap: 1px;
+        background-color: #444;
+        padding: 10px;
+        border-radius: 5px;
+        grid-template-columns: repeat(15,50px);
+        grid-template-rows: repeat(5,50px);
+        #sp1 {
+            grid-area: 1/1/1/1;
+        }
+
+        #r1 {
+            grid-area: 1/2/1/2;
+        }
+
+        #r2 {
+            grid-area: 1/3/1/3;
+        }
+
+        #r3 {
+            grid-area: 1/4/1/4;
+        }
+
+        #r4 {
+            grid-area: 1/5/1/5;
+        }
+
+        #r5 {
             grid-area: 1/6/1/6;
         }
-        #r6{
-            grid-area: 1/7/1/7;
-            }
-            #r7{
-                grid-area: 1/8/1/8;
-                }
-                #r8{
-                    grid-area: 1/9/1/9;
-                    }
-                    #r9{
-                        grid-area: 1/10/1/10;
-                    }
-                    #r0{
-                        grid-area: 1/11/1/11;
-                    }
-                    #r-{
-                        grid-area: 1/12/1/12;
-                    }
-                    #sa{
-                        grid-area: 1/13/1/13;
-                    }
-                    #bkspc{
-                        grid-area: 1/14/1/14;
-                    }
-                    
-}
 
+        #r6 {
+            grid-area: 1/7/1/7;
+        }
+
+        #r7 {
+            grid-area: 1/8/1/8;
+        }
+
+        #r8 {
+            grid-area: 1/9/1/9;
+        }
+
+        #r9 {
+            grid-area: 1/10/1/10;
+        }
+
+        #r0 {
+            grid-area: 1/11/1/11;
+        }
+
+        #r- {
+            grid-area: 1/12/1/12;
+        }
+
+        #sa {
+            grid-area: 1/13/1/13;
+        }
+
+        #bkspc {
+            grid-area: 1/14/1/15;
+        }
+
+        #tab {
+            grid-area: 2/1/2/2;
+        }
+
+        #q {
+            grid-area: 2/3/2/3;
+        }
+
+        #w {
+            grid-area: 2/4/2/4;
+        }
+
+        #e {
+            grid-area: 2/5/2/5;
+        }
+
+        #r {
+            grid-area: 2/6/2/6;
+        }
+
+        #t {
+            grid-area: 2/7/2/7;
+        }
+
+        #y {
+            grid-area: 2/8/2/8;
+        }
+
+        #u {
+            grid-area: 2/9/2/9;
+        }
+
+        #i {
+            grid-area: 2/10/2/10;
+        }
+
+        #o {
+            grid-area: 2/11/2/11;
+        }
+
+        #p {
+            grid-area: 2/12/2/12;
+        }
+
+        #s1 {
+            grid-area: 2/13/2/13;
+        }
+
+        #s2 {
+            grid-area: 2/14/2/14;
+        }
+
+        #s3 {
+            grid-area: 2/15/2/15;
+        }
+
+        #capslk {
+            grid-area: 3/1/3/2;
+        }
+
+        #a {
+            grid-area: 3/3/3/3;
+        }
+
+        #s {
+            grid-area: 3/4/3/4;
+        }
+
+        #d {
+            grid-area: 3/5/3/5;
+        }
+
+        #f {
+            grid-area: 3/6/3/6;
+        }
+
+        #g {
+            grid-area: 3/7/3/7;
+        }
+
+        #h {
+            grid-area: 3/8/3/8;
+        }
+
+        #j {
+            grid-area: 3/9/3/9;
+        }
+
+        #k {
+            grid-area: 3/10/3/10;
+        }
+
+        #l {
+            grid-area: 3/11/3/11;
+        }
+
+        #m1 {
+            grid-area: 3/12/3/12;
+        }
+
+        #m2 {
+            grid-area: 3/13/3/13;
+        }
+
+        #enter {
+            grid-area: 3/14/3/15;
+        }
+
+        #shift1 {
+            grid-area: 4/1/4/2;
+        }
+
+        #z {
+            grid-area: 4/3/4/3;
+        }
+
+        #x {
+            grid-area: 4/4/4/4;
+        }
+
+        #c {
+            grid-area: 4/5/4/5;
+        }
+
+        #v {
+            grid-area: 4/6/4/6;
+        }
+
+        #b {
+            grid-area: 4/7/4/7;
+        }
+
+        #n {
+            grid-area: 4/8/4/8;
+        }
+
+        #m {
+            grid-area: 4/9/4/9;
+        }
+
+        #sp {
+            grid-area: 4/10/4/10;
+        }
+
+        #sq {
+            grid-area: 4/11/4/11;
+        }
+
+        #sr {
+            grid-area: 4/12/4/12;
+        }
+        #shift2 {
+            grid-area: 4/13/4/15;
+        }
+
+        #ctrl1 {
+            grid-area: 5/1/5/1;
+        }
+
+        #windows {
+            grid-area: 5/2/5/2;
+        }
+
+        #alt1 {
+            grid-area: 5/3/5/3;
+        }
+
+        #space {
+            grid-area: 5/4/5/12;
+        }
+
+        #alt2 {
+            grid-area: 5/13/5/13;
+        }
+        #windows2{
+            grid-area: 5/14/5/14;
+        }
+        #ctrl2{
+            grid-area: 5/15/5/15;
+        }
+    }
+    
+}
