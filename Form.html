@@ -4,179 +4,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="Form.css">
+    <title>School Admission</title>
+    <link rel="stylesheet" href="Form.css">
 </head>
+
 <body>
+    <h1 id="title">ADMISSON FORM</h1>
+    <p id="description">Please fill out the form for admission</p>
 
-    <h1>Choose Payment</h1>
-    <p id="choosen-paymenttype">Credit Card</p>
-    <ul class="payment-types">
-        <li class="paymenttype pp unselected-left">
-            <div class="box">
-                <header>
-                    <div class="card" id="pp-card">
-                        <div class="flipper">
-                            <div class="front">
-                                <div class="shine"></div>
-                                <div class="shadow"></div>
-                                <div class="card-bg">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/513985/pp-front-bg.png" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name"> STUDENT'S NAME</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter the name" required />
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">EMAIL</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+        </div>
+        <class="form-group">
+            <label id="number-label" for="number">AGE<span class="clue">(optional)</span></label>
+            <input type="number" name="age" id="number" min="3" max="18" class="form-control" placeholder="Age" />
             </div>
-        </li>
-        <li class="paymenttype selected cc">
-            <div class="box">
-                <header>
-                    <div class="card" id="cc-card">
-                        <div class="flipper">
-                            <div class="front">
-                                <div class="shine"></div>
-                                <div class="shadow"></div>
-                                <div class="card-bg">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/513985/cc-front-bg.png" />
-                                </div>
-                                <div class="card-content">
-                                    <div class="credit-card-type"></div>
-                                    <div class="card-number">
-                                        <span>1234 1234 1234 1234</span>
-                                        <span>1234 1234 1234 1234</span>
-                                    </div>
-                                    <div class="card-holder">
-                                        <em>Card holder</em>
-                                        <span>Your Name</span>
-                                        <span>Your Name</span>
-                                    </div>
-                                    <div class="validuntil">
-                                        <em>Expire</em>
-                                        <div class="e-month">
-                                            <span>
-                                                MM
-                                            </span>
-                                            <span>
-                                                MM
-                                            </span>
-                                        </div>
-                                        <div class="e-divider">
-                                            <span>
-                                                /
-                                            </span>
-                                            <span>
-                                                /
-                                            </span>
-                                        </div>
-                                        <div class="e-year">
-                                            <span>
-                                                YY
-                                            </span>
-                                            <span>
-                                                YY
-                                            </span>
-                                        </div>
+            <br>
 
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="back">
-                                <div class="shine"></div>
-                                <div class="shadow"></div>
-                                <div class="card-bg">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/513985/cc-back-bg-new.png" />
-                                </div>
-                                <div class="ccv">
-                                    <em>CCV Number</em>
-                                    <strong></strong>
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-number">
-                                        <span>4111 1111 1111 1111</span>
-                                        <span>4111 1111 1111 1111</span>
-                                    </div>
-                                    <div class="card-holder">
-                                        <span>Your Name</span>
-                                        <span>Your Name</span>
-                                    </div>
-                                    <div class="validuntil">
-                                        <span>
-                                            <strong class="e-month">MM</strong> / <strong class="e-year">YY</strong>
-                                        </span>
-                                        <span>
-                                            <strong class="e-month">MM</strong> /
-                                            <strong class="e-year">YY</strong>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-
-                <form>
-                    <div class="form-content">
-                        <div class="field">
-                            <input type="tel" id="cardnumber" maxlength="20" />
-                            <span class="focus-bar"></span>
-                            <label for="cardnumber">Card number</label>
-                        </div>
-                        <div class="field">
-                            <input type="text" autocorrect="off" spellcheck="false" id="cardholder" maxlength="25" />
-                            <span class="focus-bar"></span>
-                            <label for="cardholder">Card holder (Name on card)</label>
-                        </div>
-                        <div class="field-group">
-                            <div class="col-50">
-                                <label for="expires-month">Expire (Valid until)</label>
-                                <div class="field expire-date">
-                                    <div>
-                                        <input type="tel" id="expires-month" placeholder="MM" allowed-pattern="[0-9]"
-                                            maxlength="2">
-                                        <span class="focus-bar"></span>
-                                    </div>
-                                    <div class="divider">/</div>
-                                    <div>
-                                        <input type="tel" id="expires-year" placeholder="YY" allowed-pattern="[0-9]"
-                                            maxlength="2">
-                                        <span class="focus-bar"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-50">
-                                <div class="field ccv">
-                                    <input type="tel" id="ccv" autocomplete="off" maxlength="3" />
-                                    <span class="focus-bar"></span>
-                                    <label for="ccv">CCV</label>
-                                </div>
-                            </div>
-                        </div>
-                        <button><span>Submit</span></button>
-                    </div>
-                </form>
+            <div class="form-group">
+                <label id="name-label" for="name">FATHER NAME</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter the name" required />
             </div>
-        </li>
-        <li class="paymenttype ec unselected-right">
-            <div class="box">
-                <header>
-                    <div class="card" id="ec-card">
-                        <div class="flipper">
-                            <div class="front">
-                                <div class="shine"></div>
-                                <div class="shadow"></div>
-                                <div class="card-bg">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/513985/ec-front-bg.png" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </header>
+            <div class="form-group">
+                <label id="name-label" for="name">FATHER QUALIFICATION</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter the name" required />
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">FATHER PHONE NUMBER</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter the name" required />
+            </div>
+
+            <div class="form-group">
+                <label id="name-label" for="name">MOTHER NAME</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter the name" required />
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">MOTHER QUALIFICATION</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter the name" required />
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">MOTHER PHONE NUMBER</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter the name" required />
+            </div>
+            </div>
+
+            <div class="form-group">
+                <label id="name-label" for="name">RELIGION</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter the name" required />
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">CASTE</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter the name" required />
+            </div>
+            <div class="form-group">
+                <P>ADMISSON FOR CLASS
+                <P>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select the Class</option>
+                        <option value="12">12th</option>
+                        <option value="11">11th</option>
+                        <option value="10">10th</option>
+                        <option value="9">9th</option>
+                        <option value="8">8th</option>
+                        <option value="7">7th</option>
+                        <option value="6">6th</option>
+                        <option value="5">5th</option>
+                        <option value="4">4th</option>
+                        <option value="3">3rd</option>
+                        <option value="2">2nd</option>
+                        <option value="1">1st</option>
+                        <option value="Other">Other</option>
+                    </select>
 
             </div>
-        </li>
-    </ul>
+            <div class="form-group">
+                <p>TRANSPORT</p>
+                <label>
+                    <input name="user-recommend" value="definitly" type="radio" class="input-radio"
+                        checked />AUTO</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />BUS</label>
+                <label>
+                    <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />PARENT
+                    PICKUP</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />OWN</label>
+            </div>
+            <div class="form-group">
+                <p>GENDER</p>
+                <label>
+                    <input name="gender" value="definitly" type="radio" class="input-radio" checked />MALE</label>
+                <label>
+                    <input name="gender" value="maybe" type="radio" class="input-radio" />FEMALE</label>
+            </div>
+            <div class="form-group">
+                <p>HOME ADDRESS</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placesholder="Enter your comment here....."></textarea>
+            </div>
+            <div class="form-group">
+                <p>FUTURE AIM</p>
+                <select id="most-like" name="mostlike" class="form-control" required>
+                    <option disabled selected value>Empty</option>
+                    <option value="challenges">DOCTOR</option>
+                    <option value="challenges">POLICE</option>
+                    <option value="projects">ENGINEER</option>
+                    <option value="community">SCIENTIST</option>
+                    <option value="opensource">OTHERS</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <p>How about the School Infrastructure?<span class="clue">(check all that apply)</span></p>
+                <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />VERY
+                    GOOD</label>
+                <label><input name="prefer" value="back-end projects" type="checkbox"
+                        class="input-checkboxes" />GOOD</label>
+                <label><input name="prefer" value="Data-visualization" type="checkbox" class="input-checkboxes" />NOT
+                    BAD</label>
+                <label><input name="prefer" value="challenges" type="checkbox" class="input-checkboxes" />BAD</label>
+                <label><input name="prefer" value="open-source-community" type="checkbox"
+                        class="input-checkboxes" />WORST</label>
+
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+            </div>
+    </form>
 </body>
 
 </html>
