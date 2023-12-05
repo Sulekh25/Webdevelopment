@@ -40,6 +40,7 @@ body {
         --button-highlight-bg: rgba(2, 14, 39 .5);
         --button-highlight-bg-hover: rgba(2, 255, 255, .15);
     }
+
     &-header {
         position: relative;
         background-color: var(--header-bg);
@@ -50,6 +51,7 @@ body {
         backdrop-filter: blur(40px);
         box-shadow: inset 0px 2px 1px rgba(#fff, .1)
     }
+
     &-body {
         position: relative;
         background-color: var(--body-bg);
@@ -59,14 +61,17 @@ body {
         backdrop-filter: blur(20px);
         min-height: 250px;
     }
+
     &-operation {
         font-size: 18px;
         margin-bottom: 4px;
+
         &-result {
             font-size: 42px;
             font-weight: bold;
         }
     }
+
     &-button {
         position: relative;
         display: block;
@@ -75,34 +80,100 @@ body {
         background-color: var(--button-bg);
         font-size: 20px;
         cursor: pointer;
-        color
+        color: #fff;
+        border: 1px solid rgba(#fff, 0);
+        user-select: none;
+        backdrop-filter: blur(6px);
+        transition: all .2s ease-in-out;
+        will-change: auto;
+        z-index: 2;
+
+        &:hover,
+        &:focus {
+            box-shadow: opx 10px 25px rgba(4, 37, 100, 0.12);
+            border-radius: 4px;
+            background-color: var(--button-bg-hover);
+            border-color: rgba(#fff, .15);
+            ;
+            z-index: 5;
+            transform: scale(1.35);
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &.equal {
+            grid-row-start: span 2;
+            grid-column-start: 4;
+        }
+
+        &.highlight {
+            background-color: var(--button-highlight-bg);
+
+            &:hover,
+            &:focus {
+                background-color: var(--button-highlight-bg-hover);
+            }
+        }
+
+        &-wrapper {
+            position: absolute;
+            top: calc(117px + 15px);
+            right: 15px;
+            bottom: 15px;
+            left: 15px;
+            display: grid;
+            grid-gap: 2px;
+            grid-template-columns: repeat(4, auto);
+            grid-template-rows: repeat(5, 45px);
+        }
+
+        &-back {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 85%;
+            background-image: linear-gradient(rgb(189, 29, 140) 0%, rgb(122, 65, 206) 100%);
+            border-radius: 15px;
+            transform: skewY(8deg);
+            transform-origin: left top;
+            transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+            z-index: 5;
+        }
+
+        &-wrapper {
+            position: relative;
+        }
     }
 }
 
-.bg-item {
-    position: absolute;
-}
+    .bg-item {
+        position: absolute;
+    }
 
-#bg-1 {
-    filter: blur(10px);
-}
+    #bg-1 {
+        filter: blur(10px);
+    }
 
-#bg-2 {
-    filter: blur(36px);
-}
+    #bg-2 {
+        filter: blur(36px);
+    }
 
-#bg-4 {
-    filter: blur(50px);
-}
+    #bg-4 {
+        filter: blur(50px);
+    }
 
-#bg-6 {
-    filter: blur(40px);
-}
+    #bg-6 {
+        filter: blur(40px);
+    }
 
-#bg-7 {
-    filter: blur(30px);
-}
+    #bg-7 {
+        filter: blur(30px);
+    }
 
-#bg-9 {
-    filter: blur(20px);
-}
+    #bg-9 {
+        filter: blur(20px);
+    }
