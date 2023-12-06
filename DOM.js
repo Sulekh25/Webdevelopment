@@ -27,7 +27,7 @@ for(let i=0; i<3; i++){
     let btn = document.createElement("button");
     if(i==0)
     btn.innerHTML = "Share";
-    else if(i==0)
+    else if(i==1)
     btn.innerHTML = "Follow";
     else
     btn.innerHTML = "Install";
