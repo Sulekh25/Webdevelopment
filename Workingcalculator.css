@@ -48,7 +48,7 @@ body {
         text-align: right;
         border-bottom-left-radius: 15px;
         border-top-right-radius: 15px;
-        backdrop-filter: blur(40px);
+        webkit-backdrop-filter: blur(40px);
         box-shadow: inset 0px 2px 1px rgba(#fff, .1)
     }
 
@@ -58,7 +58,7 @@ body {
         padding: 15px;
         border-bottom-left-radius: 15px;
         border-top-right-radius: 15px;
-        backdrop-filter: blur(20px);
+        webkit-backdrop-filter: blur(20px);
         min-height: 250px;
     }
 
@@ -83,7 +83,7 @@ body {
         color: #fff;
         border: 1px solid rgba(#fff, 0);
         user-select: none;
-        backdrop-filter: blur(6px);
+        webkit-backdrop-filter: blur(6px);
         transition: all .2s ease-in-out;
         will-change: auto;
         z-index: 2;
