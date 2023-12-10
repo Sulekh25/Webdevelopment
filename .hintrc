@@ -15,7 +15,8 @@
       {
         "ignore": [
           "user-select",
-          "-webkit-backdrop-filter"
+          "-webkit-backdrop-filter",
+          "backdrop-filter"
         ]
       }
     ],
