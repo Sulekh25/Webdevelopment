@@ -23,14 +23,14 @@ p.innerHTML = "This is the logo of the whatsapp and here we are creating mulitpl
 
 let buttons = document.createElement("div");
 buttons.setAttribute("class", "btns");
-for(let i=0; i<3; i++){
+for (let i = 0; i < 3; i++) {
     let btn = document.createElement("button");
-    if(i==0)
-    btn.innerHTML = "Share";
-    else if(i==1)
-    btn.innerHTML = "Follow";
+    if (i == 0)
+        btn.innerHTML = "Share";
+    else if (i == 1)
+        btn.innerHTML = "Follow";
     else
-    btn.innerHTML = "Install";
+        btn.innerHTML = "Install";
 
 
     buttons.append(btn);
@@ -45,9 +45,9 @@ footer.innerHTML = "Copyright @2023. Whatsapp.org";
 product.append(imageDiv, title, p, buttons, footer);
 
 
-function add(){
+function add() {
     let cont = document.getElementById("container");
-    for(let j=0;j<9;j++){
+    for (let j = 0; j < 9; j++) {
         cont.append(product)
     }
 }
