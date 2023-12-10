@@ -5,7 +5,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
 
 body {
-    background: #aaa;
+    background: rgb(3, 60, 232);
     font: 300 15px/24px "Open Sans", sans-serif;
     color: #bbb;
     user-select: none;
@@ -21,10 +21,11 @@ h1 {
     margin: 30px auto;
     width: 90%;
     height: 400px;
-    background: #bbb;
+    background: rgb(7, 231, 212);
     padding: 30px 80px;
     border-radius: 10px;
-    border-bottom: 6px solid #999;
+    font-size: 25px;
+    box-shadow: 6px 6px 6px red;
 }
 
 .key-row {
@@ -40,10 +41,10 @@ h1 {
 }
 
 .key {
-    background: #444;
+    background: red;
     color: #eee;
-    border-radius: 4px;
-    box-shadow: 0 1px 0 #222, inset 0 1px 3px rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    box-shadow: 4px 4px 4px rgb(237, 241, 18), inset 0 1px 3px rgba(255, 255, 255, 0.1);
     transition: 0.1s;
     align-items: center;
     align-content: center;
