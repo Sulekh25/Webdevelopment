@@ -125,7 +125,7 @@ body {
             left: 15px;
             display: grid;
             grid-gap: 2px;
-            grid-template-columns: repeat(4, auto);
+            grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(5, 45px);
         }
 
