@@ -72,7 +72,7 @@ body {
         }
     }
 
-    &-button {
+    &-button span{
         position: relative;
         display: block;
         height: 100%;
